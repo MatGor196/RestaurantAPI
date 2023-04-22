@@ -10,3 +10,5 @@ Jej zadaniem jest odbieranie i przetwarzanie prostych zapytań typu Get, Post, P
 Dodatkowo API zawiera prosty mechanizm logów z użyciem NLog, użyto w niej AutoMappera do tworzenia obiektów pośrednich dto jak również zawiera proste walidacje poprawności. W aplikacji są również dwa dodatkowe middleware: jedno mierzy czas wykonywania requestów i wypisuje informacje o nich do konsoli, drugie jest ogólnego przeznaczenia i wychwytuje błędy (choć będę tutaj szczery, niestety nie działa doskonale, mimo że wydaje się być napisane raczej ok).
 
 Do całości został własnoręcznie dodany Swagger dokumentujący całe API.
+
+UWAGA: W pliku nlog.config w węzłach <targets> należy ustawić własne ścieżki zapisu plików z logami (są zaprogramowane głównie na akcję Delete).
